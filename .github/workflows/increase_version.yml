@@ -35,9 +35,9 @@ jobs:
 
     - name: Commit files
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -m "Updated GVIEW version ${{ env.GVIEW_VERSION }}" -a
+        git config --local user.email "zahariarauul+bot@gmail.com"
+        git config --local user.name "rzaharia-bot"
+        git commit -m "Updated GVIEW version ${{ secrets.GPG_BOT_KEY }}" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
